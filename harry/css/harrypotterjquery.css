@@ -1,0 +1,222 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Bree+Serif);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+        color: #333333;
+    padding-top: 66px; /* change to 68px later*/
+    font-family: "Lato", sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: "Bree Serif", serif;
+}
+p {
+    line-height: 20px; /* MINE */
+}
+
+.container {
+    width: 100%; /* MINE */
+    /* max-width: 1024px; */ /* MINE */
+    margin: 0 auto;
+}
+
+/* HEADER */
+#brand {
+    color: transparent; /* GDI uses "text-indent: -9000;" */
+    background: url(../images/z.png) no-repeat top left;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 10px;
+    background-size: 45px; /* MINE */
+    text-align: center; /* MINE */
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 66px;
+    background: rgba(250, 250, 250, .8);
+    xborder-bottom: 2px solid #CCC;
+    /* box-shadow: 0 0 10px 0px black; */ /* MINE, prompted by GDI */
+}
+nav ul {
+    float: right;
+}
+nav li {
+    float: left;
+    width: auto; /*don't think this does anything*/
+}
+nav li a {
+    padding: 25px 10px;
+    display: block; /* making things block-y is important!! */
+    text-decoration: none; /* MINE, prompted by GDI */
+    transition: all .25s; /* MINE */
+    color: #333333; /* MINE, prompted by GDI */
+    /* border-left: 1px dashed black; */ /* MINE */
+}
+nav li a:hover {
+    background: #333333;
+    color: #FFFFFF;
+}
+
+/* HERO */
+#hero {
+    background: url(../images/Hogwarts-PS.png) no-repeat center;
+    color: #FAFAFA;
+    text-align: center;
+    height: 400px;
+    background-size: cover;
+    padding: 25px 0;
+}
+#hero img {
+    width: 150px;
+    border-radius: 50%;
+}
+#hero h2 {
+    font-size: 400%; 
+    margin: 10px;
+}
+#hero .wizard {
+    border: 2px solid white; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    margin-top: 10px;
+    font-size: 150%;
+} 
+
+/* MAIN CONTENT: 3 COLUMNS */
+#main-content {
+    text-align: center;
+    padding: 25px 0;
+    overflow: hidden; /* this is from GDI, without it #main-content bottom padding dissappears for some reason */
+}
+#main-content h3 {
+    font-size: 250%;
+    margin: 20px 0;
+}
+#main-content h4 {
+    font-size: 150%; 
+    margin: 20px 0 15px 0;
+    color: #333333;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+.column img {
+    width: 70%; /* do we actually need this line if we have max-width? */
+    max-width: 70%;
+    border-radius: 50%;
+    transition: all .25s;  /* MINE */
+}
+/* .column img:hover {
+    transform: rotate(45deg);
+} */
+.column a {
+    display: inline-block;
+    font-size: 150%;
+    color: #333333;
+    padding: 10px 20px;
+    border: 2px solid #333333;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all .25s;
+}
+.column a:hover {
+    xtransform: scale(1.1);
+    background: #333333;
+    color: white;
+}
+
+/* SOCIAL */
+#social {
+    clear: both; /* MINE */
+    background: #333333;
+    color: #FAFAFA;
+    padding: 25px 0;
+    overflow: hidden;
+    text-align: center; /* MINE */
+}
+#social ul {
+    float: left; /* MINE, picked up from GDI in Developer Tools*/
+    left: 50%; /* MINE, picked up from GDI in Developer Tools*/
+    position: relative; /* MINE, picked up from GDI in Developer Tools*/
+}
+#social li {
+    float: left;
+    width: auto;
+    padding: 25px 15px 15px 15px;
+    xmargin: 20px 0 0 0;
+    right: 50%; /* MINE, picked up from GDI in Developer Tools*/
+    position: relative; /* MINE, picked up from GDI in Developer Tools*/
+    transition: all .25s;  /* MINE */
+}
+#social li:hover {
+    transform: scale(1.2);  /* MINE */
+}
+#social h3 {
+    line-height: 25px;
+    padding: 0 10px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* NEEEEEEEEEEW */
+
+#togglemenu, #menubutton {
+    display: none;
+}
+
+/* --- MOBILE --- */
+@media only screen and (max-width: 767px) {
+    .column {
+        width: 100%;
+        float: none;
+    }
+    .column a {
+        margin: 15px 0 20px 0;
+    }
+    #hero h2 {
+        font-size: 300%;
+    }
+    #hero .wizard {
+        font-size: 120%;
+    }
+
+
+ /* NEEEEEEEEEEEEEEEEEWWWW */
+    #regularmenu {
+        display: none;
+    } 
+    #menubutton {
+        margin: 0 auto;
+        padding: 23px;
+        background: #FAFAFA;
+        font-size: 200%;
+        display: block;
+    }
+    #mobilemenu ul {
+        float: none;
+        text-align: center;
+    }
+    #mobilemenu li {
+        float: none;
+    }
+    #mobilemenu li a {
+        background: rgba(250, 250, 250, 1);
+    }
+    #mobilemenu li a:hover {
+        background: #333333;
+    }
+}
