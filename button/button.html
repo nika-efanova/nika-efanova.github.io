@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-sacel=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="buttonstyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="total">
+	<ul>
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">GALLERY</a></li>
+		<li><a href="#">BLOG</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ul>
+</div>
+
+<div class="btn" id="menu" title="TOGGLE MENU">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+</div>
+
+<script>
+
+$("#menu").click(function() {
+	var x = $(".icon-bar:nth-child(2)").css("height");
+	if (x !== "0px") {
+		$(".icon-bar:nth-child(1)").css("transform", "translate(0px, 8px) rotate(-45deg)");
+		$(".icon-bar:nth-child(2)").css("height", "0");
+		$(".icon-bar:nth-child(3)").css("transform", "translate(0px, 0px) rotate(45deg)");
+
+		$("#total").animate({
+			top: "0px"
+		}, 200);
+		$("body").animate({
+			top: "200px"
+		}, 200);
+
+
+	} else {
+		$(".icon-bar:nth-child(1)").css("transform", "none");
+		$(".icon-bar:nth-child(2)").css("height", "3px");
+		$(".icon-bar:nth-child(3)").css("transform", "none");
+
+		$("#total").animate({
+			top: "-200px"
+		}, 200);
+		$("body").animate({
+			top: "0px"
+		}, 200);
+
+	}
+});
+
+</script>
+
+</body>
+</html>
