@@ -42,8 +42,8 @@ nav {
 	float: right;
 	z-index: 500;
 	position: absolute;
-	top: 30px;
-	right: 30px;
+	top: 20px;
+	right: 20px;
 }
 ul {
 	margin-top: 120px;
@@ -163,5 +163,5 @@ h2 {
 }
 #menubutton {
 	width: 50px;
-	height: 49px;
+	height: 50px;
 }
