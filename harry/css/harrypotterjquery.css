@@ -5,7 +5,7 @@
 }
 
 body {
-        color: #333333;
+    color: #333333;
     padding-top: 66px; /* change to 68px later*/
     font-family: "Lato", sans-serif;
 }
@@ -22,46 +22,45 @@ p {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* NAV */
+
 #brand {
-    color: transparent; /* GDI uses "text-indent: -9000;" */
-    background: url(../images/z.png) no-repeat top left;
-    width: 45px;
-    height: 45px;
-    float: left;
-    margin: 10px;
-    background-size: 45px; /* MINE */
-    text-align: center; /* MINE */
+    display: none;
 }
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+#menu {
+    position: fixed; /*absolute for scrolling*/
+    z-index: 1;
     width: 100%;
-    height: 66px;
-    background: rgba(250, 250, 250, .8);
-    xborder-bottom: 2px solid #CCC;
-    /* box-shadow: 0 0 10px 0px black; */ /* MINE, prompted by GDI */
+    top: 0;
+    text-align: center;
+    background: #FAFAFA;
 }
-nav ul {
-    float: right;
+#menubutton {
+    xmargin: 0 auto;
+    padding: 23px;
+    font-size: 200%;
+    display: block;
+    text-decoration: none;
+    color: #333;
 }
-nav li {
-    float: left;
-    width: auto; /*don't think this does anything*/
-}
-nav li a {
+#menu li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
     padding: 25px 10px;
-    display: block; /* making things block-y is important!! */
-    text-decoration: none; /* MINE, prompted by GDI */
     transition: all .25s; /* MINE */
-    color: #333333; /* MINE, prompted by GDI */
     /* border-left: 1px dashed black; */ /* MINE */
 }
-nav li a:hover {
+#menu li a:hover {
     background: #333333;
     color: #FFFFFF;
 }
+
+.hidemenu {
+    display: none;
+}
+
 
 /* HERO */
 #hero {
@@ -104,10 +103,9 @@ nav li a:hover {
     color: #333333;
 }
 .column {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-}
+    width: 100%;
+    float: none;
+    }
 .column img {
     width: 70%; /* do we actually need this line if we have max-width? */
     max-width: 70%;
@@ -172,51 +170,83 @@ footer {
 }
 
 
-/* NEEEEEEEEEEW */
-
-#togglemenu, #menubutton {
-    display: none;
-}
 
 /* --- MOBILE --- */
-@media only screen and (max-width: 767px) {
-    .column {
-        width: 100%;
-        float: none;
-    }
-    .column a {
-        margin: 15px 0 20px 0;
-    }
-    #hero h2 {
-        font-size: 300%;
-    }
-    #hero .wizard {
-        font-size: 120%;
-    }
+
+    
+.column a {
+    margin: 15px 0 20px 0;
+}
+#hero h2 {
+    font-size: 300%;
+}
+#hero .wizard {
+    font-size: 120%;
+}
 
 
- /* NEEEEEEEEEEEEEEEEEWWWW */
-    #regularmenu {
+#pagetop {
+    width: 100%;
+    text-align: center;
+}
+#pagetop a {
+    display: inline-block;
+    margin: 0 auto 20px auto;
+    padding: 25px;
+    text-decoration: none;
+    color: #333;
+    xbackground: yellow;
+    border: 1px dashed #333;
+    transition: all .25s;
+}
+#pagetop a:hover {
+    background: #333;
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 750px) {
+    #pagetop {
         display: none;
-    } 
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+    }
+
+    /* HEADER */
     #menubutton {
-        margin: 0 auto;
-        padding: 23px;
-        background: #FAFAFA;
-        font-size: 200%;
+        display: none;
+    }
+    #brand {
         display: block;
+        color: transparent; /* GDI uses "text-indent: -9000;" */
+        background: url(../images/l3.png) no-repeat top left;
+        width: 45px;
+        height: 45px;
+        float: left;
+        margin: 10px;
+        background-size: 45px; /* MINE */
+        text-align: center; /* MINE */
     }
-    #mobilemenu ul {
-        float: none;
-        text-align: center;
+    #menu {
+        height: 66px;
+        background: rgba(250, 250, 250, .8);
+        xborder-bottom: 2px solid #CCC;
+        /* box-shadow: 0 0 10px 0px black; */ /* MINE, prompted by GDI */
     }
-    #mobilemenu li {
-        float: none;
+    #menu ul {
+        float: right;
     }
-    #mobilemenu li a {
-        background: rgba(250, 250, 250, 1);
+    #menu li {
+        float: left;
+        width: auto; /*don't think this does anything*/
     }
-    #mobilemenu li a:hover {
-        background: #333333;
+    #menu ul {
+        display: block; 
     }
+
+
 }

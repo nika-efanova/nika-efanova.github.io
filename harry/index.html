@@ -4,37 +4,30 @@
 	<title>Harry Potter | Wizard</title>
 	<link rel="stylesheet" href="css/reset.css"> 
 	<link rel="stylesheet" href="css/harrypotterjquery.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=true;" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta charset="UTF-8">
 </head>
-<body>
+<body  id="top">
 	<header>
 		<nav>
 			<div class="container"> 
 
-				<div id="regularmenu">
-					<h1 id="brand">Harry Potter</h1>
-					<ul>
-						<li><a href="#friends">My Best Friends</a></li>
-						<li><a href="#hogwarts">My School</a></li>
-						<li><a href="#DA">Dumbledore's Army</a></li>
+				<div id="menu">
+					<a href="#"<h1 id="brand">Harry Potter</h1></a>
+					<!-- <a href="#" id="menubutton">&equiv;</a> -->
+					<div id="menubutton">&equiv;</div>
+					<ul class="hidemenu">
+						<li><a href="#friends">MY BEST FRIENDS</a></li>
+						<li><a href="#hogwarts">MY SCHOOL</a></li>
+						<li><a href="#DA">DUMBLEDORE'S ARMY</a></li>
 					</ul>	
 				</div>
-					
-				<div id="mobilemenu">
-					<ul>
-						<li><p id="menubutton">&equiv;<p></li>
-						<div id="togglemenu">
-							<li><a href="#friends">MY BEST FRIENDS</a></li>
-							<li><a href="#hogwarts">MY SCHOOL</a></li>
-							<li><a href="#DA">DUMBLEDORE'S ARMY</a></li>
-						</div>
-					</ul>
-				</div>				
 
-			</div>
+			</div> <!-- end of container div -->
 		</nav>
 	</header>
+
+
 	<section id="hero">
 		<img src="images/harry-potter-7-2-neues-plakat.jpg" alt="Harry Potter">
 		<h2>Harry Potter</h2>
@@ -64,6 +57,7 @@
 			</section>	
 		</div> 			
 	</section>
+
 	<section id="social">
 		<div class="container"> 
 			<h3>I use muggles' social media too. We should be friends.</h3>
@@ -76,8 +70,10 @@
 		</div> 
 	</section> 
 	<footer>
-		<p>&copy; 2015 Harry Potter</p>
+		<p>&copy; 2016 Harry Potter</p>
 	</footer>
+
+	<div id="pagetop"><a href="#top">GO TO PAGE TOP</a></div>
 
 <!-- JAVASCRIPT -->
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>

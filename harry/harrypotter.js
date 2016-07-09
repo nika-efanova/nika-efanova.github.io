@@ -1,3 +1,4 @@
-$("#mb").click(function() {
-	$("ul").toggleClass("hide");
+
+$("#menubutton").click(function() {
+	$("ul").toggleClass("hidemenu");
 });

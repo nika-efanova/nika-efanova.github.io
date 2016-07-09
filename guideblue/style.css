@@ -300,9 +300,9 @@ p {
 
 
 @media screen and (min-width: 650px) {
-    #menu {
-        position: absolute;
-    }
+  #menu {
+    position: absolute;
+  }
   #menubutton {
     display: none;
   }  
