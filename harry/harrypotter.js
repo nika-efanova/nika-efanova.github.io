@@ -1,4 +1,4 @@
 
 $("#menubutton").click(function() {
-	$("ul").toggleClass("hidemenu");
+	$("#menu ul").toggleClass("hidemenu");
 });
