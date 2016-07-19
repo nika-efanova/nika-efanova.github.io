@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+	xborder: 1px solid black !important;
+}
+
+body {
+	xbackground: rgb(12, 157, 141);
+	xcolor: rgb(12, 157, 141);
+	text-align: center;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+#container {
+	background: white;
+	margin: 5% auto;
+	padding: 5%;
+	width: 90%;
+	border-radius: 10px;
+	max-width: 800px;
+}
+
+#quotefield {
+	xbackground: rgba(12, 157, 141, .05);
+	margin: 5% 5% 0 5%;
+	margin: 10% 5% 5% 5%;
+	padding: 5%;
+	border-radius: 10px;
+	xborder-color: rgb(12, 157, 141);
+	border-style: dashed;
+	border-width: 2px;
+}
+
+a {
+	display: block;
+	text-transform: uppercase;
+	padding: 20px;
+	xbackground: rgb(12, 157, 141);
+	color: white;
+	text-decoration: none;
+	margin: 5%;
+	border-radius: 10px;
+}
+
+a:hover {
+	opacity: .75;
+	cursor: pointer;
+}
+
+footer {
+	color: white;
+	margin-bottom: 10px;
+}
+
+#gold {
+	background: #ffe121; /*yellow*/
+	background: #f1ba1b; /*like svg*/
+	margin: 5%;
+	margin-top: 10%;
+
+	display: block;
+	text-transform: uppercase;
+	padding: 20px;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+img {
+	width: 100px;
+	margin: 5%;
+}
+
+::selection {
+	background: black;
+	xbackground: #f1ba1b; /* like svg */
+}
+
+@media screen and (min-width: 768px) {
+	.clearfix:before,
+  .clearfix:after {
+    content: " "; 
+    display: table; 
+    clear: both;
+	}
+
+	#container {
+		margin-bottom: 20px;
+		padding-top: 0;
+	}
+
+	h1 {
+		font-size: 2em;
+		margin-bottom: 5%;
+	}
+ 
+	.half {
+		width: 50%;
+		float: left;
+	}
+
+	#quotefield {
+		margin: 2.5%;
+		margin-bottom: 0;
+	}
+
+	#gold {
+		margin: 5% 2.5% -2.5% 2.5%;
+	}
+
+	img {
+		xmargin: -5% 0 5% 0;
+		margin: 7.5% 0 5% 0;
+	}
+}

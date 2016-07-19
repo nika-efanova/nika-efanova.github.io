@@ -1,0 +1,185 @@
+/*
+  Docs at http://http://simpleweatherjs.com
+
+  Look inspired by http://www.degreees.com/
+  Used for demo purposes.
+
+  Weather icon font from http://fonts.artill.de/collection/artill-weather-icons
+
+  DO NOT hotlink the assets/font included in this demo. If you wish to use the same font icon then download it to your local assets at the link above. If you use the links below odds are at some point they will be removed and your version will break.
+*/
+
+body {
+  padding: 10% 10% 0 10%;
+  font: 13px 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@font-face {
+    font-family: 'weather';
+    src: url('../artill/artill_clean_icons.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+  color: white;
+  font-family: weather;
+  font-size: 125px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+}
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+.container {
+  max-width: 400px;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#weather h1 {
+  margin: 20px;
+}
+
+#weather h2 {
+  margin: -45px 0 8px;
+  color: #fff;
+  font-size: 75px;
+  font-weight: 300;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather li {
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#weather li, #switch {
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+#switch {
+  display: block;
+  width: 100%;
+  color: white;
+  background: #232323;
+  border: 1px solid #232323;
+  cursor: pointer;
+  transition: all .5s;
+  text-transform: uppercase;
+}
+
+#switch:hover {
+  background: transparent;
+  border: 1px solid white;
+}
+
+#switch:focus, #location:focus {
+  outline: none;
+}
+
+#switch.hidden, #location.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+::selection {
+  background: #232323;
+}
+
+.wrap {
+  min-height: calc(100vh - 50px);
+}
+
+footer {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#location {
+  padding: 10px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    padding-top: 45px;
+  }
+  #weather h2 {
+    margin: 0 0 8px;
+    font-size: 100px;
+  }
+  #weather i {
+    font-size: 150px;
+  }
+  #weather li, #switch {
+    padding: 20px;
+  }
+  .wrap {
+    min-height: calc(100vh - 100px);
+  }
+}
