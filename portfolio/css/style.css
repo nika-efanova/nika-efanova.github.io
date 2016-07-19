@@ -20,7 +20,7 @@ img {
 }
 
 .container-smaller {
-  max-width: 750px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -107,12 +107,12 @@ h1 {
   font-size: 3em;
   text-transform: uppercase;
   margin-bottom: 15px;
-  font-family: "Lobster", "Poiret One";
+  font-family: "Lobster";
 }
 
 h2 {
   font-size: 2em;
-  font-family: "Lobster", "Poiret One";
+  font-family: "Lobster";
 }
 
 .aligner {
