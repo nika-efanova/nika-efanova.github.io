@@ -66,3 +66,8 @@ $("#location").click(function() {
     loadWeather(newLocation,''); 
 });
 
+$("#locationfrominput").click(function() {
+    var newLocation = prompt("Which city?");
+    loadWeather(newLocation,''); 
+});
+
