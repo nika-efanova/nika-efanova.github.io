@@ -21,13 +21,7 @@ $(document).ready(function() {
 
 	// RANDOM COLORS //
 	var colors = [
-		"rgba(12,157,141,1)", // teal ORIGINAL
-		"rgba(157,12,77,1)", // red-purple
-		"rgb(157,12,84)", // red-purple 2
-		"rgba(12,157,108,1)", // green teal
 
-		"rgba(252,103,103,1)", // light pink watermelon ORIGINAL
-		"rgba(94,201,206,1)", // light blue
 		"rgba(143,79,111,1)", // light red-purple
 		// "rgba(206,94,155,1)", // light purple ORIGINAL
 	]

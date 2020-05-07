@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <title>Airdesk</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <style>
+        /*
+        .toiawase {
+            position: fixed;
+            top: 20%;
+            right: 2%;
+            font-size: 20px;
+            background-color: #31708f;
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+        }     
+        .toiawase{
+            position: fixed;
+            top: 0;
+            right: -100px;
+            font-size: 20px;
+            background-color: #31708f;
+            height: 50px;
+            width: 250px;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: white;
+            z-index: 9999;
+        }
+        */
+        .toiawase {
+            position: fixed;
+            bottom: 10%;
+            right: -110px;
+            font-size: 20px;
+            background-color: #31708f;
+            height: 55px;
+            width: 250px;
+            border-radius: 20px;
+            padding: 10px 20px;
+            z-index: 9999;
+            xborder: 2px dotted skyblue;
+            box-shadow: 5px 3px #154a4f;
+        }        
+        .toiawase a {
+            color: white;
+            text-decoration: none;
+        }
+        .toiawase:hover {
+            text-decoration: none;
+            background-color: #114864;
+            color: white;
+        }
+
+        .ytsfooter {
+            width: 100%;
+            color: white;
+            background-color: #5bc0de;
+            padding: 15px;
+        }
+
+        .jumbotron {
+            margin: 0;
+            height: 100vh;
+            background: url(images/office_04.jpg) no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            color: white;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-shadow: black 0px 0px 30px;
+            padding: 0;
+        }
+
+        .vertical {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .yts-button {
+            background-color: #31708f;
+            border: none;
+            color: white!important;
+        }
+
+        .yts-button:hover {
+            background-color: skyblue;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: skyblue!important;
+        }
+
+        .svg {
+            width: 100px;
+            margin-top: 5%;
+        }
+        .nav-item {
+            padding: 0 10px;
+        }
+        nav .navbar-nav a {
+            color: white!important;
+        }
+        *::selection {
+            background-color: skyblue;
+            font-family: "Sawarabi Gothic"!important;
+        }
+    </style>
+  </head>
+  <body>
+
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
+        <div class="container vertical">
+                <h1 class="display-1">Airdesk</h1>  
+                <p class="lead">企業のバックオフィスのソリューション</p>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-toggleable-md bg-info navbar-inverse sticky-top">
+        <div class="container text-center">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#service">サービス</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cost">費用</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#steps">ステップ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#merits">メリット</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#yts">イエローテイルズ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-us-form">問い合わせ</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container text-muted">
+
+        <!-- サービス -->
+        <section id="service">
+            <h2 class="display-4 py-5 mt-5 text-center">サービス説明＆内容一覧</h2>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="images/office_01.jpg">
+                        <div class="card-block">
+                            <h3 class="card-title">簡単</h3>
+                            <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="images/office_02.jpg">
+                        <div class="card-block">
+                            <h3 class="card-title">便利</h3>
+                            <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="images/office_08.jpg">
+                        <div class="card-block">
+                            <h3 class="card-title">使いやすい</h3>
+                            <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 費用 -->
+        <section id="cost">
+            <h2 class="display-4 py-5 mt-5 text-center">費用一覧</h2>
+
+            <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+                <a class="nav-link active" href="#plan-one" data-toggle="tab">1年間</a>
+                <a class="nav-link" href="#plan-two" data-toggle="tab">2年間</a>
+                <a class="nav-link" href="#plan-three" data-toggle="tab">3年間</a>
+            </nav>
+
+            <div class="tab-content py-5">
+                <div class="tab-pane active" id="plan-one">
+                    <h3>1年間</h3>
+                    <p>Lorem amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, et nam. Quia vero, voluptates quos praesentium ipsam perferendis sequi fugiat facere minus labore mollitia earum blanditiis ab tempore eaque dolorum.</p>
+                </div>
+                <div class="tab-pane fade" id="plan-two">
+                    <h3>2年間</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="tab-pane fade" id="plan-three">
+                    <h3>5年間</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>    
+        </section>
+
+        <!-- ステップ -->
+        <section id="steps">
+            <h2 class="display-4 py-5 mt-5 text-center">発注までのステップ</h2>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">❶</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">❷</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        
+                        <div class="card-block">
+                            <h3 class="card-title">❸</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <h3 class="card-title">❹</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <!-- メリット -->
+        <section id="merits">
+            <h2 class="display-4 py-5 mt-5 text-center">サービス利用メリット</h2> 
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid mx-auto d-block svg" src="svg/1_finance-markting-money-coin-dollar-molecule.svg">
+                        <div class="card-block">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid mx-auto d-block svg" src="svg/1_seo-mobile-setting-gear-cog-06.svg">
+                        <div class="card-block">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid mx-auto d-block svg" src="svg/1_seo-reward-license-certificate-contract.svg">
+                        <div class="card-block">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 会社概要 -->
+        <h2 class="display-4 py-5 mt-5 text-center">イエローテイルズ</h2>
+        <section id="yts" class="row">
+            
+            <section class="col-md-6">
+                <h3 class="display-4 py-5 text-center">会社概要</h2>
+                    <p>イエローテイルズグループは社会のデジタル変革を支える技術者集団として、それぞれの専門領域において力を発揮し、お客様に新たな価値を提供しています。</p> 
+                    <p>それぞれの専門領域において力を発揮し、お客様に新たな価値を提供しています。</p> 
+            </section>
+            <section class="col-md-6">
+                <h3 class="display-4 py-5 text-center">業務実績</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, soluta sed magni odio minima nam nemo aliquam architecto nisi iusto quidem aspernatur officia laborum doloremque doloribus rerum esse laboriosam repellat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sunt ratione. Rerum sequi amet blanditiis recusandae odio consequatur voluptatem assumenda sapiente voluptas tenetur asperiores dignissimos, architecto facilis nemo unde ducimus.</p> 
+            </section>     
+        </section>           
+    
+        <!-- 問い合わせ -->    
+        <section id="contact-us-form" class="mb-4"> 
+            <h2 class="display-4 py-5 mt-5 text-center">問い合わせ</h2>    
+        <div class="row justify-content-center">
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">お名前</label>
+                            </div>
+                        </div>
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">メールアドレス</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">課題</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">メッセージ</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- "send" button -->
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary yts-button" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+            </div>
+            <!--Grid column-->
+    </section>
+
+
+    </div>
+    <!-- end .container -->
+
+    
+    
+    <!-- sticky 問い合わせ link -->
+    <div class="toiawase"><a href="#contact-us-form">問い合わせ</a></div>
+    
+    <!-- footer -->
+    <footer class="ytsfooter text-center">2020 (c) Airdesk</footer>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
